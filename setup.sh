@@ -5,7 +5,7 @@ if [ `getprop ro.build.version.release` -lt 7 ]; then
 fi
 pkg upg -y
 echo "Installing termux-user-repository repo..."
-pkg i tur-repo -y > /dev/null 2>&1
+pkg i tur-repo x11-repo -y > /dev/null 2>&1
 echo 1.nodejs
 echo 2.nodejs-lts
 read -p "Select the nodejs version you want to install：" -n 1 njs
